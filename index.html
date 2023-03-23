@@ -61,10 +61,46 @@
         <div class="inner-modal">
           <button class="close-modal" data-modal-close>
             <svg class="close-icon">
-              <use href="./images/icons/icomoon (1)/symbol-defs.svg#icon-close"></use>
+              <use href="./images/icons.svg#icon_close"></use>
             </svg>
-          </button>
-          <p>Formular</p>
+          </button>   
+          <form class="form_service" autocomplete="off">
+              <p class="form-title">Leave your information and we'll call your back</p>
+                <label for="user_name">Name
+                  <input type="text" id="user_name" name="name" class="input_form">
+                  <svg class="form_icon">
+                    <use href="./images/icons.svg#icon_person_form"></use>
+                  </svg>
+                </label>
+                <label for="user_phone">Telephone
+                  <input type="tel" id="user_phone" name="phone" class="input_form">
+                  <svg class="form_icon">
+                    <use href="./images/icons.svg#icon_phone_form"></use>
+                  </svg>
+                </label>
+                <label for="user_email">E-mail
+                  <input type="email" id="user_email" name="email" class="input_form">
+                  <svg class="form_icon">
+                    <use href="./images/icons.svg#icon_email_form"></use>
+                  </svg>
+                </label>
+                <label for="message">Comments        
+                  <textarea name="message" id="message" rows="6" placeholder="Enter the text"></textarea>
+                </label>
+                <label class="checkbox_terms">
+                  <input type="checkbox" name="terms" />
+                  <span class="checkbox-replace">
+                    <svg id="check_square">
+                      <use href="./images/icons.svg#square"></use>
+                    </svg>
+                      <svg id="check_img">
+                        <use href="./images/icons.svg#icon_checked"></use>
+                      </svg>
+                    </span>
+                    I agree with the letter and accept the&nbsp;<a href="#">Terms and Conditions</a>
+                  </label>
+                <button class="form-btn" type="submit">Send</button>
+            </form>
         </div>
       </div>
         <div class="container hero-container">
@@ -391,6 +427,17 @@
                 </a>
               </li>
             </ul>
+          </div>
+          <div class="newsletter">
+            <h3 class="title_media">Subscribe to the newsletter : </h3><br>
+            <form class="newsletter-form" autocomplete="off">
+              <input type="email" name="email" placeholder="E-mail" />
+              <button class="button" type="submit">Subscribe
+                <svg class="newsletter_icon">
+                  <use href="./images/icons.svg#icon_send"></use>
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
       </div>
